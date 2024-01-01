@@ -1,0 +1,641 @@
+#portofolio-body{
+    margin: 0px;
+}
+#name-container{
+    background-image: url('objbg.jpg');
+    background-size: cover;
+    height: 600px;
+}
+#name-front{
+    background-image: url('orangeBlueBG.jpg');
+    opacity: 0.9;
+    background-size: cover;
+    height: inherit;
+}
+#obj{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 70px;
+    opacity: 1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#logo{
+    height: 50px;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-options{
+    display: flex ;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 20px;
+    font-family: 'Lucida Sans' ;
+    font-weight: 600;
+    color: white;
+}
+.nav-options-small{
+    display: none;
+}
+.nav-options-small-main{
+    display: none;
+    position: absolute;
+}
+.nav-options-small:hover .nav-options-small-main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+    transition: all 2s ease-in-out 0s;
+    z-index: 500;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    padding: 10px;
+    font-family: 'Lucida Sans' ;
+    right: 1px;
+  }
+.nav-option:hover{
+    color: orange;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    color: white;
+    margin-top: 20px;
+}
+.socials-small{
+    display: none;
+    justify-content: space-between;
+    width: 300px;
+    color: white;
+    margin-top: 20px;
+}
+#fullname{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+#intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+#bio-container{
+    display: flex;
+}
+.bio-container-inner{
+    display: inline-block;
+    margin: 5px;
+}
+.left{
+    width: 30%;
+    display: flex;
+}
+.right{
+    width: 65%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+.bio-subject{
+    display: inline-block;
+    font-weight: 700;
+}
+.bio-content{
+    font-weight: 100;
+}
+.align-bio{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.subjects-head{
+    color: rgb(30, 144, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.edu{
+    display: flex;
+    justify-content: space-between;
+    font-family:'Trebuchet MS';
+    font-weight: 600;
+    max-width: 90%;
+}
+.cert{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.edu-course{
+    color: rgb(70, 70, 70);
+}
+.edu-cert{
+    color: orange;
+    margin-top: 10px;
+}
+.edu-grad{
+    color: rgb(30, 144, 255);
+    margin: 20px;
+}
+.skill-grp{
+    margin: 20px;
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    width: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+.skillset{
+    padding: 10px;
+}
+.skill{
+    background-color: white;
+    border-radius: 10px;
+    width: 45%;
+    height: auto;
+    padding: 15px 0px;
+    margin: 10px;
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+.skill-txt{
+    background-color: orange;
+    color: white;
+    font-family:'Trebuchet MS';
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    margin: 10px;
+    height: auto;
+    width: 70%;
+}
+.skill-pcnt{
+    display: inline-block;
+    border: 3px solid rgb(30, 144, 255);
+    border-width: 3px 3px 3px 0px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(30, 144, 255);
+}
+#services{
+    background-color: orange;
+    color: white;
+}
+.service-head{
+    font-weight: 700;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 20px;
+    display: block;
+}
+.icon-container{
+    display: inline-block;
+    width: 10%;
+    height: 80px;
+    margin-left: 60px;
+    padding: 90px 100px;
+}
+.service-txt{
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+}
+.work-exp-cont{
+    padding: 10px;
+    box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.work-exp-company{
+    color: dodgerblue;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.work-exp-desc{
+    color: rgb(70, 70, 70);
+    padding: 10px;
+}
+#project-cont{
+    /*background-image: url('pen.jpg');
+    background-size: cover;*/
+    background-color: darkgray;
+    padding: 30px 0px 0px 0px;
+    height: auto;
+}
+#proj-inner{
+    height: 400px;
+    justify-content: center;
+}
+.proj{
+    display: inline-block;
+    background-size: cover;
+    height: 400px;
+    width: 48%;
+    margin: 0px 5px ;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 15px 15px 0px 0px;
+}
+.pleft{
+    background-image: url('encode_decode.webp');
+    transition:  all 0.3s ease-in-out ;
+}
+.pright{
+    background-image: url('vinyl_player.jpg');
+    transition:  all 0.3s ease-in-out ;
+}
+.pleft:hover{
+    background-size: 110%;
+}
+.pright:hover{
+    background-size: 110%;
+}
+.view-proj{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    color: white;
+    background-color: rgb(99, 98, 98);
+    cursor: pointer;
+}
+.proj-txt{
+    margin: 20px;
+    display: inline-block;
+}
+#hproj{
+    color: white;
+    margin: 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+#hproj2{
+    color: rgb(70, 70, 70);
+    margin: 30px 20px 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+.work-posts{
+    display: flex;
+}
+.work-post{
+    width: 30%;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+}
+.model-me{
+    width: 90%;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+#go-to-post{
+    width: 250px;
+    padding: 10px;
+    margin: 15px;
+    background-color: orange;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.hire-me-cont{
+    background-color: rgb(30, 144, 255);
+    color: white;
+    padding: 50px;
+    margin: 30px 0px;
+    height: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.big-txt{
+    font-size: 40px;
+}
+.small-txt{
+    font-size: 16px;
+}
+#contact-btn{
+    width: 200px;
+    padding: 15px;
+    margin: 20px;
+    background-color: white;
+    color: rgb(30, 144, 255);
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.contact-head{
+    color: rgb(87, 87, 87);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+}
+.contact{
+    width: 45%;
+    height: 500px;
+    display: inline-flex;
+    color: rgb(87, 87, 87);
+}
+#leave-msg-text{
+    margin-left: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.cleft{
+    background-image: url('me_fade.jpg');
+    background-size: cover;
+}
+.cright{
+    flex-direction: column;
+}
+.leave-msg{
+    margin: 8px 15px 8px 25px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.msg-main{
+    height: 150px;
+}
+#leave-msg-btn{
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    font-family: verdana;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+.footer{
+    padding: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.links{
+    margin: 10px;
+    color: rgb(30, 144, 255);
+}
+.project-container{
+    box-shadow: 0px 5px 6px 2px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: white;
+}
+#portofolio-body-proj h3{
+    width: 97%;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+#portofolio-body-proj{
+    background-color: dodgerblue;
+}
+.project-title{
+    color: dodgerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.project-desc{
+    display: block;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(129, 128, 128);
+    border: 3px solid dodgerblue;
+    text-align: left;
+    border-width: 0px 0px 0px 3px;
+    height: 60px;
+    overflow-y: auto;
+}
+.project-tech-stack{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    width: 65%;
+    display: inline-block;
+    text-align: left;
+    padding: 10px 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow: auto;
+    height: 22px;
+}
+.stack-label{
+    width: 25%;
+    height: 22px;
+    display: inline-block;
+    text-align: left;
+    padding: 10px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(83, 83, 83);
+}
+.view-project{
+    display: inline-block;
+    padding: 10px;
+    color: dodgerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.view-project:hover{
+    color: orange;
+}
+.github-btn{
+    width: 97%;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    color: dodgerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#obj-prime{
+    color: maroon;
+}
+
+@media (max-width: 880px){
+    #logo{
+        height: 40px;
+    }
+    #obj{
+        height: 120px;
+        width: 120px;
+        margin-top: 50px;
+    }    
+    .nav-options{
+        display: none;
+    }
+    .nav-options-small{
+        display: block;
+        color: white; 
+    }
+    #fullname{
+        font-size: 20px;
+    }
+    #intro{
+        font-size: 12px;
+    }
+    .socials{
+        display: none;
+    }
+    .socials-small{
+        display: block;
+        width: 200px;
+    }
+    #name-container{
+        height: 450px;
+    }
+    #bio-container{
+        display: block;
+    }
+    .right{
+        width: 90%;
+        margin: 10px;
+    }
+    .bio-subject{
+        width: 70px;
+        height: 40px;
+    }
+    .bio-content{
+        width: 130px;
+        height: 40px;
+        overflow-y: auto;
+    }
+    .skill{
+        width: 90%;
+    }
+    .skill-pcnt{
+        margin: 0px 10px;
+        width: 65%;
+        border-width: 3px 3px 3px 3px
+    }
+    .icon-container{
+        width: 10%;
+        height: 80px;
+        margin: 10px;
+        padding: 30px;
+    }
+    .service-txt{
+        font-size: 14px;
+        width: 65px;
+    }
+    #proj-inner{
+        height: auto;
+    }
+    .proj{
+        width: 90%;
+        height: 200px;
+    }
+    .work-posts{
+        display: block;
+    }
+    .work-post{
+        width: 85%;
+        height: auto;
+        margin: 10px;
+    }
+    #go-to-post{
+        width: 150px;
+    }
+    .contact{
+        display: flex;
+        width: 95%;
+        height: 400px;
+        margin: 5px;
+    }
+    .leave-msg{
+        margin: 10px;
+        width: 150px;
+        height: 20px;
+    }
+    #contact-btn{
+        width: 150px;
+        padding: 15px;
+        margin: 10px;
+    }
+    .hire-me-cont{
+        padding: 20px;
+        margin: 10px 0px;
+    }
+    .skill-grp{
+        margin: 5px;
+        padding: 10px;
+    }
+    footer{
+        display: block;
+    }
+    .footer{
+        margin: 0px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #leave-msg-btn{
+        margin: 0px;
+    }
+    .cert{
+        margin: 0px;
+    }
+    .project-container{
+        width: 80%;
+    }
+    .github-btn{
+        width: 90%;
+        margin: 5px;
+    }
+    .edu-grad{
+        margin: 0px;
+    }
+} 
