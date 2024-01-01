@@ -511,8 +511,8 @@ footer{
         height: 40px;
     }
     #obj{
-        height: 120px;
-        width: 120px;
+        height: 150px;
+        width: 150px;
         margin-top: 50px;
     }    
     .nav-options{
@@ -598,8 +598,8 @@ footer{
     }
     .leave-msg{
         margin: 10px;
-        width: 150px;
-        height: 20px;
+        width: 90%;
+        height: 30px;
     }
     #contact-btn{
         width: 150px;
@@ -620,10 +620,10 @@ footer{
     .footer{
         margin: 0px;
         padding: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
     #leave-msg-btn{
-        margin: 0px;
+        margin: 10px;
     }
     .cert{
         margin: 0px;
