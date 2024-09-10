@@ -79,7 +79,7 @@
             <p> 
                 I also double (or you could say triple) as a writer and Model, doing diverse range of work from 
                 Academic/ Thesis writing to script writing, digital content creation for media. I model clothing wears and accessories 
-                for brands and vendors, engaging in promotional campaigns boosting image of Brands and supporing marketing.
+                for brands and vendors, engaging in promotional campaigns boosting image of Brands and supporting marketing.
             </p>
             <p>
                 As a software engineer, I constantly Seek challenging roles that allows me to utilize my technical expertise 
@@ -266,11 +266,11 @@
         </div>
         <div class="contact cright">
             <span id="leave-msg-text">Leave a Message</span>
-            <input type="text" class="leave-msg" placeholder="Enter full name">
-            <input type="text" class="leave-msg" placeholder="Enter Email">
-            <input type="text" class="leave-msg" placeholder="Enter Subject of Message">
-            <textarea class="leave-msg msg-main" placeholder="Enter Message"></textarea>
-            <input type="submit" id="leave-msg-btn">
+            <input type="text" class="leave-msg" placeholder="Enter full name" id="name" onchange="processName()">
+            <input type="text" class="leave-msg" placeholder="Enter Email" id="mail" onchange="processMail()">
+            <input type="text" class="leave-msg" placeholder="Enter Subject of Message" id="subject" onchange="processSubject()">
+            <textarea class="leave-msg msg-main" placeholder="Enter Message" id="message" onchange="processMessage()"></textarea>
+            <input type="submit" id="leave-msg-btn" onclick="submitForm()">
         </div>
     </div>
     <footer align='left'>
@@ -286,4 +286,56 @@
         </div> 
     </footer>
 </body>
+<script>
+    var name, mail, subject, message = ""
+    function processName() {
+        // Get the input value from the field
+        name = document.getElementById("name").value;
+    }
+    function processMail() {
+        // Get the input value from the field
+        mail = document.getElementById("mail").value;
+    }
+    function processSubject() {
+        // Get the input value from the field
+        subject = document.getElementById("subject").value;
+    }
+    function processMessage() {
+        // Get the input value from the field
+        message = document.getElementById("message").value;
+    }
+    function submitForm() {
+        try {
+        const response = fetch('https://api.brevo.com/v3/smtp/email', {
+            method: 'POST',
+            headers: {
+                'accept': 'application/json',
+                'api-key': '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',
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                sender: {
+                    name: `${name} - Obj Portofolio `,
+                    email: 'davidezeani11@gmail.com'
+                },
+                to: [
+                    {
+                        email: 'davidezeani11@gmail.com',
+                        name: 'Ezeani David'
+                    }
+                ],
+                subject: `New Message from Portfolio: ${subject}`,
+                htmlContent: `<p><b>${subject}</b></p>
+                                <p>${message}</p>
+                                <p>Regards</p>
+                                <p><i>${name}</i></p>
+                                <p><i>${mail}</i></p>`,
+            })
+        });
+        alert("Mail Sent");
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
+    }    
+</script>
 </html>
