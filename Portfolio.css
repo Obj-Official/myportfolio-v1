@@ -231,7 +231,6 @@ a{
     padding: 10px;
     box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.2);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 .work-exp-company{
     color: dodgerblue;
@@ -250,36 +249,57 @@ a{
     background-color: darkgray;
     padding: 30px 0px 0px 0px;
     height: auto;
+    margin: 0px;
 }
 #proj-inner{
-    height: 400px;
+    height: 260px;
     justify-content: center;
 }
 .proj{
     display: inline-block;
     background-size: cover;
-    height: 400px;
-    width: 48%;
+    height: 260px;
+    width: 295px;
     margin: 0px 5px ;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 .pleft{
-    background-image: url('encode_decode.webp');
+    background-image: url('fcc-form.png');
     transition:  all 0.3s ease-in-out ;
 }
 .pright{
     background-image: url('vinyl_player.jpg');
     transition:  all 0.3s ease-in-out ;
 }
+.pleft0{
+    background-image: url('encode_decode.webp');
+    transition:  all 0.3s ease-in-out ;
+}
+.pright0{
+    background-color: rgba(248, 245, 245, 0.283);
+    border: 1px solid white;
+    transition:  all 0.3s ease-in-out ;
+}
 .pleft:hover{
-    background-size: 110%;
+    height: 270px;
+    width: 302px;
 }
 .pright:hover{
-    background-size: 110%;
+    height: 270px;
+    width: 302px;
+}
+.pleft0:hover{
+    height: 270px;
+    width: 302px;
+}
+.pright0:hover{
+    height: 270px;
+    width: 302px;
 }
 .view-proj{
     display: flex;
