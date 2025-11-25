@@ -162,6 +162,7 @@ a{
     border-radius: 0px 20px 20px 0px;
     width: 200px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     font-weight: 700;
 }
 .skillset{
@@ -170,7 +171,7 @@ a{
 .skill{
     background-color: white;
     border-radius: 10px;
-    width: 48%;
+    width: 10%;
     height: auto;
     padding: 10px 0px;
     margin: 5px;
