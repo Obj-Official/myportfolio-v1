@@ -372,15 +372,10 @@
         // Get the input value from the field
         message = document.getElementById("message").value;
     }
-    function submitForm() {
+    async function submitForm() {
         try {
-        const response = fetch('https://api.brevo.com/v3/smtp/email', {
+        const response = await fetch('https://brevo-email-proxy.davidezeani11.workers.dev/', {
             method: 'POST',
-            headers: {
-                'accept': 'application/json',
-                'api-key': 'my-keys',
-                'content-type': 'application/json'
-            },
             body: JSON.stringify({
                 sender: {
                     name: `${name} - Obj Portofolio `,
