@@ -1,72 +1,162 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="DonJanta">
-    <meta name="description" content="Portofolio for David Ezeani">
-    <meta name="keywords" content="Portofolio, Resume, David Ezeani">
+    <meta name="author" content="David Ezeani">
+    <meta name="description" content="Selected software, frontend, and data science projects by David Ezeani.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="obj.png" />
+    <meta name="theme-color" content="#f5f7fb">
+    <link rel="icon" href="obj.png">
     <link rel="stylesheet" href="Portfolio.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>David Ezeani Portofolio</title>
+    <title>Projects | David Ezeani</title>
 </head>
 <body id="portofolio-body-proj">
-    <div>
-        <center>
-        <h3>Projects</h3>
-        <div>
-            <div class="project-container">
-                <h4 class="project-title">Account opening form - Unilag Microfinance bank</h4>
-                <span class="project-desc">Account opening form for the University of Lagos Microfinance Bank equipped with mailing functionality</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">React js, HTML, CSS</span></span>
-                <a href="http://openaccount.unilagmfbank.com/"><span class="view-project">View More</span></a>
+    <main class="projects-page">
+        <nav class="projects-nav" aria-label="Main navigation">
+            <a href="index.html" class="projects-home-link">David Ezeani</a>
+            <a href="index.html#bio">About me</a>
+        </nav>
+        <header class="projects-header">
+            <p class="section-eyebrow">Selected work · 2024–2026</p>
+            <h1>Projects built to solve real problems.</h1>
+            <p>Enterprise platforms, thoughtful frontend experiences, and independent data science work. Every featured frontend project uses TypeScript and MUI.</p>
+        </header>
+
+        <section class="project-index-section" aria-labelledby="featured-index-title">
+            <div class="project-index-heading">
+                <p class="section-eyebrow">Featured</p>
+                <h2 id="featured-index-title">Product &amp; client work</h2>
+                <!-- <p>Recent work is prioritized first, with Nurture Path leading the collection.</p> -->
             </div>
-            <div class="project-container">
-                <h4 class="project-title">Appointment Booking Form - First Cardiology Consultant</h4>
-                <span class="project-desc">A full stack webapp, comprising a form to book an appointment with First Cardiology Consultant Clinic and an admin page to view and manage bookings equipped with mailing functionality</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">MongoDB, Express JS, React js, Node (MERN stack)</span></span>
-                <a href="https://booking.firstcardiology.org/"><span class="view-project">View More</span></a>
+            <div class="project-index-grid">
+                <article class="project-index-card project-index-priority">
+                    <div class="project-card-meta"><span>Full stack · Enterprise Fertility Platform</span><time datetime="2026-06">June 2026</time></div>
+                    <h3>Nurture Path Fertility</h3>
+                    <p>Architected and built a scalable surrogacy management platform from scratch, streamlining the end-to-end application process for surrogate mothers and intended parents.</p>
+                    <ul>
+                        <li>Designed MongoDB schemas for client profiles, applications, administrative logs, and financial transactions.</li>
+                        <li>Built secure authentication and REST APIs for onboarding, applications, and financial transactions.</li>
+                        <li>Integrated Paystack card payments and a custom signing flow with signature capture and automated PDF generation.</li>
+                        <li>Centralized platform oversight in an intuitive admin dashboard and designed backend services for concurrent applications and sensitive document storage.</li>
+                        <li>Digitalized client documentation, projected to improve operational efficiency by 100%.</li>
+                    </ul>
+                    <div class="project-tags"><span>Next.js</span><span>MERN</span><span>TypeScript</span><span>MUI</span><span>MongoDB</span><span>Paystack</span></div>
+                    <a class="project-index-link" href="https://www.nurturepathsurrogacy.org/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Frontend · Marketing analytics</span><time datetime="2026-02">February 2026</time></div>
+                    <h3>Admoni Marketing Admin Suite</h3>
+                    <p>Delivered a user-friendly administration suite that helps marketing teams track ROI and optimize campaign performance.</p>
+                    <ul>
+                        <li>Integrated real-time reporting and visualization, including charts, KPIs, and campaign metrics, reducing manual reporting effort by 30%.</li>
+                        <li>Automated lead tracking, approvals, and notifications, improving operational efficiency by 20%.</li>
+                        <li>Collaborated with design, product, and business stakeholders to turn requirements into features aligned with marketing goals.</li>
+                        <li>Created a clear interface to reduce training time for non-technical staff.</li>
+                    </ul>
+                    <div class="project-tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>MUI</span><span>Analytics</span></div>
+                    <a class="project-index-link" href="http://secure.admoni.ng/dashboard" target="_blank" rel="noopener noreferrer">Open dashboard <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Frontend · E-commerce</span><span>Live experience</span></div>
+                    <h3>Spice and Soul Bake House Hub</h3>
+                    <p>A welcoming storefront for a bake house, designed to make its products and brand easy to explore across devices.</p>
+                    <ul>
+                        <li>Refined visual hierarchy, typography, color, and responsive layouts to strengthen the brand presentation.</li>
+                        <li>Improved product discovery, navigation, and calls to action.</li>
+                        <li>Optimized frontend assets and page rendering for a smoother browsing experience.</li>
+                    </ul>
+                    <div class="project-tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>MUI</span><span>Responsive design</span></div>
+                    <a class="project-index-link" href="https://www.spiceandsoulbakehousehub.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Full Stack Webapp · Fertility Documentation</span></div>
+                    <h3>Succour Surrogacy Platform</h3>
+                    <ul>
+                        <li>Designed MongoDB schemas for client profiles, applications.</li>
+                        <li>Built admin monitoring dashboard.</li>
+                        <li>Built secure authentication and REST APIs for onboarding, applications and monitoring.</li>
+                        <li>Centralized platform oversight in an intuitive admin dashboard and designed backend services for concurrent applications and sensitive document storage.</li>
+                        <li>Digitalized client documentation, projected to improve operational efficiency by 100%.</li>
+                    </ul>
+                    <div class="project-tags"><span>Next.js</span><span>React</span><span>HTML</span><span>MUI</span></div>
+                    <a class="project-index-link" href="https://www.succoursurrogacy.org/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Web application · Audio</span></div>
+                    <h3>Lhaid Audio Player</h3>
+                    <p>A lightweight web audio player for listening to music in the browser.</p>
+                    <div class="project-tags"><span>React</span><span>HTML</span><span>CSS</span></div>
+                    <a class="project-index-link" href="https://lhaid-audio-player.onrender.com/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Web application · Publishing</span></div>
+                    <h3>Blog WebApp</h3>
+                    <p>A full-stack blogging application with a database-backed publishing workflow.</p>
+                    <div class="project-tags"><span>React</span><span>Django REST Framework</span><span>PostgreSQL</span></div>
+                    <a class="project-index-link" href="https://cosmoblog-webapp.onrender.com/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Web application · Document workflow</span></div>
+                    <h3>eSLA: SLA Signature Portal</h3>
+                    <p>A portal for signing service-level agreement documents used by banks and their service providers.</p>
+                    <div class="project-tags"><span>React</span><span>Django REST Framework</span><span>PostgreSQL</span></div>
+                    <a class="project-index-link" href="https://github.com/Obj-Official/eSLA" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Software · Python</span></div>
+                    <h3>Tracking Fleet Software</h3>
+                    <p>A virtual fleet tracking system.</p>
+                    <div class="project-tags"><span>Python</span></div>
+                    <a class="project-index-link" href="https://github.com/Obj-Official/Tracking_Fleet_System" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <div class="project-card-meta"><span>Desktop software · Python</span></div>
+                    <h3>Jungle Language Encoder &amp; Decoder</h3>
+                    <p>A small Tkinter application that encodes English messages into Jungle language and decodes them back.</p>
+                    <div class="project-tags"><span>Python</span><span>Tkinter</span></div>
+                    <a class="project-index-link" href="https://github.com/Obj-Official/JungLang_Encoder_Decoder" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                </article>
             </div>
-            <div class="project-container">
-                <h4 class="project-title">F.O Emmjoe Enterprise Website</h4>
-                <span class="project-desc">Company Website for Quality Cloth Sales, Contract and Merchandising, Farming, and Agro-Allied Services. Equipped with frontend functionalities</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">React js, HTML, CSS</span></span>
-                <a href="https://emmjoeenterprise.com"><span class="view-project">View More</span></a>
+        </section>
+
+        <section class="project-index-section data-science-section" aria-labelledby="data-science-title">
+            <div class="project-index-heading">
+                <p class="section-eyebrow">Separate collection</p>
+                <h2 id="data-science-title">Data science &amp; research</h2>
+                <p>Analytical projects are grouped separately from product development, making the methods and research focus easier to explore.</p>
             </div>
-            <div class="project-container">
-                <h4 class="project-title">Encoding and Decoding Software</h4>
-                <span class="project-desc">This Software encodes a message in English to Jungle language and decode encoded message back to English demonstrating a minor form of encryption</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">Python (with python Tkinter module)</span></span>
-                <a href="https://github.com/Obj-Official/JungLang_Encoder_Decoder.git"><span class="view-project">View More</span></a>
+            <div class="project-index-grid data-science-grid">
+                <article class="project-index-card">
+                    <h3>Predictive Analytics Recommender System</h3>
+                    <p>A predictive analytics project exploring personalized product recommendations.</p>
+                    <div class="project-tags"><span>Data science</span><span>Recommender systems</span></div>
+                    <a class="project-index-link" href="Predictive_Analytics_Recommender_System.html">Read case study <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <h3>Hall Recommendation System</h3>
+                    <p>A recommendation project focused on helping users discover suitable university halls.</p>
+                    <div class="project-tags"><span>Data science</span><span>Recommendations</span></div>
+                    <a class="project-index-link" href="Hall_Recommender.html">Read case study <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <h3>Ransomware Detection Research</h3>
+                    <p>Research exploring approaches to detecting ransomware activity.</p>
+                    <div class="project-tags"><span>Research</span><span>Cybersecurity</span></div>
+                    <a class="project-index-link" href="ransomware_detection.html">Read case study <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="project-index-card">
+                    <h3>Client-side Email with Attachments</h3>
+                    <p>A technical article about adding mailing functionality to a React client without server-side code.</p>
+                    <div class="project-tags"><span>Technical writing</span><span>React</span></div>
+                    <a class="project-index-link" href="https://medium.com/@davidezeani11/adding-mailing-functionality-to-the-client-react-including-attachments-without-server-side-code-b2bec4715f44" target="_blank" rel="noopener noreferrer">Read article <span aria-hidden="true">↗</span></a>
+                </article>
             </div>
-            <div class="project-container">
-                <h4 class="project-title">Web Audio Player</h4>
-                <span class="project-desc">An audio playing webapp</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">React js, HTML, CSS</span></span>
-                <a href="https://lhaid-audio-player.onrender.com/"><span class="view-project">View More</span></a>
-            </div>
-            <div class="project-container">
-                <h4 class="project-title">Blog WebApp</h4>
-                <span class="project-desc">A blogging webapp with front end and backend functionlites. This webapp save blog as data in a database</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">React js, HTML, CSS, Django, Django Rest Framework, PostgreSQL</span></span>
-                <a href="https://cosmoblog-webapp.onrender.com/"><span class="view-project">View More</span></a>
-            </div>
-            <div class="project-container">
-                <h4 class="project-title">eSLA: SLA signature portal</h4>
-                <span class="project-desc">A mini portal which allows signature of a Bank’s "Service Level Agreement" document. This is a document used by banks to authorize big transactions with their service providers</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">React js, HTML, CSS, Django, Django Rest Framework, PostgreSQL</span></span>
-                <a href="https://github.com/Obj-Official/eSLA.git"><span class="view-project">View More</span></a>
-            </div>
-            <div class="project-container">
-                <h4 class="project-title">Tracking fleet Software</h4>
-                <span class="project-desc">A virtual Tracking System Software</span><br/>
-                <span class="stack-cont"><span class="stack-label">Tech <br/>Stack:</span><span class="project-tech-stack">Python</span></span>
-                <a href="https://github.com/Obj-Official/Tracking_Fleet_System.git"><span class="view-project">View More</span></a>
-            </div>
-        </div>
-    </center>
-    </div>
-    <center><a href="https://github.com/Obj-Official"><button class="github-btn"> Explore my Github Projects</button></a></center>
-</body></html>
+        </section>
+        <footer class="projects-footer">
+            <a href="index.html">← Back to portfolio</a>
+            <a href="https://github.com/Obj-Official" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+        </footer>
+    </main>
+</body>
+</html>
